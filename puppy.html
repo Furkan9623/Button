@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button</title>
+  </head>
+  <body>
+    <h1>This is Cute Puppy</h1>
+    <img
+      src="https://www.rauanimalhospital.com/sites/default/files/puppy-dental-care.jpg"
+      alt="Cute puppy"
+    />
+    <div>
+      <p>Likes: <span id="likes"></span></p>
+      <p>Dislikes: <span id="dislike"></span></p>
+    </div>
+
+    <button id="likebtn">like</button> <br />
+    <button id="dislikebtn">Dislike</button>
+  </body>
+  <script>
+    document.getElementById("likebtn").addEventListener("click", likefun);
+    document.getElementById("dislikebtn").addEventListener("click", dislikeFun);
+
+    // var likeCount = localStorage.getItem("likesValue"); when i delete record then its will be display on web pages blank;
+
+    var likeCount = localStorage.getItem("likesValue") || 0;
+    // likesVlue||0 its will give 0 values on web pages when i delete records
+    document.getElementById("likes").innerText = likeCount;
+
+    var dislikeCount = localStorage.getItem("dislikeValues") || 0;
+    document.getElementById("dislike").innerText = dislikeCount;
+
+    function likefun() {
+      likeCount++;
+      document.getElementById("likes").innerText = likeCount;
+      localStorage.setItem("likesValue", likeCount);
+    }
+    function dislikeFun() {
+      dislikeCount++;
+      document.getElementById("dislike").innerText = dislikeCount;
+      localStorage.setItem("dislikeValues", dislikeCount);
+    }
+  </script>
+</html>
