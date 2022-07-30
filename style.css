@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f2f2f2;
+}
+.cl {
+  width: 500px;
+  height: 580px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  padding: 50px;
+}
+h1 {
+  margin: 0;
+  padding: 0 0 20px;
+  color: black;
+  text-align: center;
+}
+.signup label {
+  width: 500px;
+  padding: 0;
+
+  color: black;
+  font-size: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.signup input {
+  width: 500px;
+  height: 80px;
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+#sign_up {
+  height: 55px;
+  outline: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+#sign_num {
+  height: 55px;
+  outline: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+#pas {
+  height: 55px;
+  outline: white;
+  font-size: 20px;
+  border-radius: 10px;
+}
+
+.cl input[type="submit"] {
+  border: none;
+
+  height: 55px;
+
+  background-color: grey;
+  border-radius: 20px;
+  color: white;
+  font-size: 25px;
+}
+.c {
+  font-size: 20px;
+  color: black;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
