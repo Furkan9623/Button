@@ -16,6 +16,8 @@ body {
   transform: translate(-50%, -50%);
   color: white;
   padding: 50px;
+  border-radius: 20px;
+  outline: none;
 }
 h1 {
   margin: 0;
@@ -39,21 +41,22 @@ h1 {
 }
 #sign_up {
   height: 55px;
-  outline: white;
+
   font-size: 20px;
   border-radius: 10px;
 }
 #sign_num {
   height: 55px;
-  outline: white;
+  outline: rgb(255, 255, 255);
   font-size: 20px;
   border-radius: 10px;
 }
 #pas {
   height: 55px;
-  outline: white;
   font-size: 20px;
   border-radius: 10px;
+  border: 1px solid black;
+  /* outline: rgb(255, 255, 255); */
 }
 
 .cl input[type="submit"] {

@@ -30,6 +30,7 @@ function login(event) {
   }
   if (flag) {
     alert("Login Successfull");
+    
   } else {
     alert("Enter correct email and password");
   }
